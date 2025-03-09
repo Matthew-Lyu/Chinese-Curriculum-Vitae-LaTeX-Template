@@ -1,0 +1,115 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+
+\documentclass[a4paper]{article}
+
+% 导入必要的包
+\usepackage{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{zhnumber} % 用于中文数字
+\usepackage{hyperref} % 超链接
+
+% 设置页面边距
+\geometry{
+  top=2.54cm,
+  bottom=2.54cm,
+  left=3.18cm,
+  right=3.18cm
+}
+
+% 设置中文字体
+\usepackage[UTF8]{ctex}
+
+% 设置英文字体为Times New Roman
+\setmainfont{Times New Roman}
+
+% 设置标题格式
+\titleformat{\section}
+  {\centering\fontsize{24pt}{36pt}\selectfont\bfseries}
+  {}
+  {0em}
+  {}
+
+% 定义中文编号计数器
+\newcounter{ChineseSection}
+\renewcommand{\theChineseSection}{\chinese{ChineseSection}}
+
+\titleformat{\subsection}
+  {\fontsize{16pt}{24pt}\selectfont\bfseries}
+  {\stepcounter{ChineseSection}\theChineseSection、}
+  {0.5em}
+  {}
+
+% 调整标题间距
+\titlespacing*{\subsection}
+  {0pt}  % 左边距
+  {0.5ex plus 0.2ex minus 0.1ex}  % 上方间距
+  {0.5ex plus 0.2ex minus 0.1ex}  % 下方间距
+
+% 设置正文字体大小和行距
+\renewcommand{\normalsize}{\fontsize{14pt}{21pt}\selectfont}
+
+% 设置段落首行缩进
+\setlength{\parindent}{2em}
+
+% 文档开始
+\begin{document}
+
+% 正文内容
+\section{标题}
+
+% 称呼
+\noindent 尊敬的Prof.：
+
+您好！
+
+我是【姓名】，今年【年龄】岁，目前就读于【本科院校】【学院】【专业】。现在将本人的基本情况介绍如下。
+
+\subsection{政治表现}
+
+【此处介绍政治思想表现、党组织关系、参与的党团活动等内容】
+
+【此处介绍担任的学生工作、社会工作经历等】
+
+【此处介绍社会实践、志愿服务等经历】
+
+\subsection{外语水平}
+
+【此处介绍外语考试成绩、外语应用能力等】
+
+\subsection{业务和科研能力}
+
+【此处介绍专业课程学习情况、GPA、专业排名等】
+
+【此处介绍获得的学术奖项、奖学金等】
+
+【此处介绍参与的科研项目、成果、发表的论文等】
+
+【此处介绍掌握的专业技能、软件工具等】
+
+\subsection{研究计划}
+
+【此处介绍研究生阶段的学习和研究计划】
+
+【第一年计划】
+
+【第二年计划】
+
+【第三年计划】
+
+\subsection{总结}
+
+【此处是个人总结，表达对目标院校的向往和自己的决心】
+
+% 落款
+\begin{flushright}
+  【姓名】\\
+  \today
+\end{flushright}
+
+\end{document}
