@@ -1,5 +1,3 @@
-# Chinese-Curriculum-Vitae-LaTeX-Template
-
 # 中文学术自述文档LaTeX模板
 
 天下人苦Word久矣。这是一个用于研究生复试或其他学术场合的中文自述文档LaTeX模板，采用XeLaTeX编译，支持中文排版。
